@@ -12,6 +12,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - [ ] Allow user to setup multiple saved logins and give one-click buttons upon logout
 
 
+## [Unreleased]
+
+### Added
+
+- Extend authorization cookie expiration date to 1 year from now
+
+
 ## [1.0.0] - 2017-04-11
 
 ### Added

@@ -34,8 +34,13 @@ if ( ! class_exists( 'Automatic_Login' ) ) {
 			exit;
 		}
 
+		public static function set_cookie_expiration( $expire ) {
+			return YEAR_IN_SECONDS;
+		}
+
 		public function run() {
 			add_action( 'init', array( 'Automatic_Login', 'automatically_login' ) );
+			add_filter( 'auth_cookie_expiration', array( 'Automatic_Login', 'set_cookie_expiration' ) );
 		}
 
 	}
