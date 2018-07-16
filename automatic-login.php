@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Automatic Login
  * Description: Stay logged in forever!
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Curtis Belt
  */
 
@@ -16,12 +16,12 @@ if ( ! class_exists( 'Automatic_Login' ) ) {
 		public static function automatically_login() {
 
 			if ( ! is_admin() || is_user_logged_in() ) {
-				return;	
+				return;
 			}
 
 			$user = wp_signon( array(
-				'user_login' => 'admin',
-				'user_password' => 'admin',
+				'user_login' => 'curtisbelt',
+				'user_password' => 'curtisbelt',
 				'remember' => true,
 			) );
 
@@ -44,7 +44,7 @@ if ( ! class_exists( 'Automatic_Login' ) ) {
 		}
 
 	}
-	
+
 	function Automatic_Login() {
 		$plugin = new Automatic_Login();
 		$plugin->run();

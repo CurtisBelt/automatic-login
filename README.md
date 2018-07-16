@@ -14,5 +14,5 @@ A simple plugin to automatically log into /wp-admin/. Do not use in production.
 
 For now, it only works with username and password "admin".
 
-1. Create super admin user called "admin" with password "admin".
-2. Activate **Automatic Login** to login as "admin" automatically.
+1. Create super admin user called "curtisbelt" with password "curtisbelt".
+2. Activate **Automatic Login** to login as "curtisbelt" automatically.
